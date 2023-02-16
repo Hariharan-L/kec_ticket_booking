@@ -1,0 +1,512 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+.nav
+{
+  position: sticky;
+  font-size: 1.1em;
+  justify-content: space-between;
+}
+#logo
+{
+  width: 17%;
+  background: #fff;
+}
+#exp a
+{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  letter-spacing: 1px;
+  background-color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  overflow: hidden;
+  transition: 0.2s;
+}
+#exp a:hover
+{
+  color: #fff;
+  background: #000;
+  box-shadow: 0 0px #292928,0 0 20px #292724;
+  border-radius: 40px;
+  transition-delay: 0.1s;
+}
+#exp 
+{
+  position: relative;
+  color: #fff;
+  background: url("/img/main.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main img
+{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-height: 700px;
+}
+.cs img
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-height: 700px;
+}
+.imgbox
+{
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  width: 55%;
+  margin: 20px;
+} 
+#swaram1
+{
+  background: url("/img/swaram3.jpg");
+  background-size: cover;
+  padding-right: 10px;
+  padding-top: 100px;
+  padding-left: 900px;
+  padding-bottom: 100px;
+  overflow-x: hidden;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+#swaram2
+{
+  background: url("/img/swaram1.jpg");
+  overflow-x: hidden;
+  background-size: cover;
+  padding-right: 1150px;
+  padding-top: 120px;
+  padding-left: 60px;
+  padding-bottom: 100px;
+  font-size: 1.3em;
+  color: #fff;
+}
+.name
+{
+  margin: 10px;
+  font-size: 1.6em;
+  font-family: 'Roboto';
+  background:linear-gradient(90deg, rgb(8, 0, 255) 0%, rgb(0, 247, 255) 100%); 
+  -webkit-text-fill-color: transparent;;
+  -webkit-background-clip: text;
+}
+section
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  min-height: 100vh;
+  background: #112d42;
+}
+section::before
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background:#03a9f4;
+}
+section .container
+{
+  position: relative;
+  min-width: 1100px;
+  min-height: 550px;
+  display: flex;
+  z-index:1000;
+}
+section .container .contactinfo
+{
+  position: absolute;
+  top: 40px;
+  width: 350px;
+  height: calc(100% - 20%);
+  background: #0f3959;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 20px rgb(0, 0, 0.2);
+}
+section .container .contactinfo h2
+{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+section .container .contactinfo .info{
+  position: relative;
+  margin: 20px 0;
+}
+section .container .contactinfo .info li{
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  align-items: flex-start;
+}
+section .container .contactinfo .info li span:nth-child(1)
+{
+  width: 30px;
+  min-width: 30px;
+}
+section .container .contactinfo .info li span:nth-child(1) img
+{
+  max-width: 100%;
+  filter: invert(1);
+  opacity: 0.5;
+}
+section .container .contactinfo .info li span:nth-child(2)
+{
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 300;
+  opacity: 0.5;
+}
+section .container .contactinfo .info li:hover span:nth-child(1) img,
+section .container .contactinfo .info li:hover span:nth-child(2)
+{
+  opacity: 1;
+}
+section .container .contactinfo .sci
+{
+  position: relative;
+  display: flex;
+}
+
+section .container .contactinfo .sci li
+{
+  list-style: none;
+  margin-right: 15px;
+}
+section .container .contactinfo .sci li a
+{
+  text-decoration: none;
+}
+section .container .contactinfo .sci li a img
+{
+  filter: invert(1);
+  opacity: 0.5;
+}
+section .container .contactinfo .sci li:hover a img
+{
+  opacity: 1;
+}
+section .container .contactform
+{
+  position: absolute;
+  padding: 70px 50px;
+  background: #fff;
+  margin-left: 170px;
+  padding-left: 250px;
+  width: 80%;
+  height: 100%;
+  box-shadow: 0 50px 50px rgb(0, 0, 0.5);
+}
+section .container .contactform h2
+{
+  color: #0f3959;
+  font-size: 24px;
+  font-weight: 500;
+}
+section .container .contactform .formbox
+{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+section .container .contactform .formbox .inputbox
+{
+  position: relative;
+  margin: 0 0 35px 0;
+}
+section .container .contactform .formbox .inputbox.w50
+{
+  width: 47%;
+}
+section .container .contactform .formbox .inputbox.w100
+{
+  width: 100%;
+}
+section .container .contactform .formbox .inputbox input,
+section .container .contactform .formbox .inputbox textarea
+{
+  width: 100% !important;
+  padding: 5px 0;
+  resize: none;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none;
+}
+section .container .contactform .formbox .inputbox textarea{
+ min-height: 120px;
+}
+section .container .contactform .formbox .inputbox span
+{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  transition: 0.3s;
+  pointer-events: none;
+}
+section .container .contactform .formbox .inputbox input:focus ~ span,
+section .container .contactform .formbox .inputbox textarea:focus ~ span
+{
+  transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #ff568c;
+}
+section .container .contactform .formbox .inputbox input[type="submit"]
+{
+  position: relative;
+  cursor: pointer;
+  background: #0f3959;
+  color: #fff;
+  border: none;
+  max-width: 150px;
+  padding: 12px;
+}
+section .container .contactform .formbox .inputbox input[type="submit"]:hover
+{
+  background: #ff568c;
+}
+
+@media (min-width: 768px) and (max-width: 991px)  {
+#exp a
+{
+  padding: 15px 25px;
+  border-radius: 40px;
+  font-size: 22px;
+  letter-spacing: 0.8px;
+}
+section .container
+{
+  position: relative;
+  min-width: 600px;
+  min-height: 550px;
+  display: flex;
+  z-index:1000;
+}
+section .container .contactform
+{
+  position: absolute;
+  padding: 70px 50px;
+  background: #fff;
+  margin-left: 120px;
+  padding-left: 250px;
+  width: 80%;
+  height: 100%;
+  box-shadow: 0 50px 50px rgb(0, 0, 0.5);
+}
+  #swaram1
+  {
+    background: url("/img/swaram3.jpg");
+    background-size: cover;
+    padding-right: 150px;
+    padding-top: 120px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    font-size: 1.1em;
+  }
+  #swaram2
+  {
+    background: url("/img/swaram1.jpg");
+    background-size: cover;
+    color: #fff;
+    padding-right: 450px;
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-bottom: 100px;
+    font-size: 1.1em;
+  }
+  img
+  {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 767px) 
+{
+  #exp a
+  {
+    padding: 13px 16px;
+    border-radius: 40px;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+  }
+  section .container
+{
+  position: relative;
+  min-width: 100px;
+  min-height: 550px;
+  display: flex;
+  flex-direction:row-reverse;
+}
+section .container .contactform {
+  display:inline-table;
+  padding: 70px 50px;
+  background: #fff;
+  margin-left: 10px;
+  width: 80%;
+  height: 100%;
+  box-shadow: none;
+}
+section .container .contactinfo {
+  position:relative;
+  top: 40px;
+  width: 84%;
+  height: calc(100% - 20%);
+  background: #0f3959;
+  margin-left: 10px;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: none;
+}
+section .container
+{
+  display: table-column;
+}
+
+
+  #swaram1
+  {
+    background: url("/img/swaram3.jpg");
+    background-size: cover;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#swaram2
+{
+  background: url("/img/swaram1.jpg");
+  background-size: cover;
+  color: #fff;
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+  .main
+  {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1550px)
+{
+  #swaram2
+  {
+    padding-right: 850px;
+  }
+}
+@media (min-width: 1101px) and (max-width: 1200px)
+{
+  section .container
+{
+  position: relative;
+  min-width: 1000px;
+  min-height: 550px;
+  display: flex;
+  z-index:1000;
+}
+  #swaram1
+  {
+    background: url("/img/swaram3.jpg");
+    background-size: cover;
+  padding-right: 60px;
+  padding-top: 120px;
+  padding-left: 600px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#swaram2
+{
+  background: url("/img/swaram1.jpg");
+  background-size: cover;
+  color: #fff;
+  padding-right: 750px;
+  padding-top: 100px;
+  padding-left: 60px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+}
+
+
+/**************desktop version*********************/
+@media (min-width: 992px) and (max-width: 1100px)
+{
+  section .container
+{
+  position: relative;
+  min-width: 900px;
+  min-height: 550px;
+  display: flex;
+  z-index:1000;
+}
+  #swaram1
+  {
+    background: url("/img/swaram3.jpg");
+    align-items: center;
+    background-size: cover;
+  padding-right: 200px;
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+#swaram2
+{
+  background: url("/img/swaram1.jpg");
+  background-size: cover;
+  color: #fff;
+  padding-right: 730px;
+  padding-top: 100px;
+  padding-left: 60px;
+  padding-bottom: 100px;
+  font-size: 1.1em;
+}
+}

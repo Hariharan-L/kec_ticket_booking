@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+    <title>Sign up</title>
+    <link rel="stylesheet" href="signin.css">
+  </head>
+  <body>
+        <div class="signin-container">
+      <h1>Sign In</h1>
+      <form action="">
+        <div class="form-group">
+          <label for="username">Name:</label>
+          <input type="text" id="name" name="Name" required>
+        </div>
+        <div class="form-group">
+          <label for="username">E-Mail</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="department">Department:</label>
+          <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="ECE">ECE</option>
+            <option value="EIE">EIE</option>
+            <option value="CSE">CSE</option>
+            <option value="CSD">CSD</option>
+            <option value="MECH">MECH</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="AUTO">AUTO</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Re-Password:</label>
+          <input type="password" id="password2" name="password" required>
+        </div>
+        <button type="submit" class="signin-btn">Sign In</button>
+        <a href="index.html" class="back">Back</a>
+      </form>
+    </div>
+      <a href="login.html" class="login">Already Have an Account? Log in Here</a>
+      <script src="signin.js" ></script>
+    <script src="script.js" ></script>
+  </body>
+</html>
